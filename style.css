@@ -2,11 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Cambria;
+    font-family: "Poppins", system-ui;
 }
 
 body {
     background-color: whitesmoke;
+    background: rgba(172,48,255,1);
+    background: -moz-linear-gradient(top, rgba(172,48,255,1) 0%, rgba(119,66,248,1) 52%, rgba(93,74,245,1) 77%, rgba(70,82,242,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(172,48,255,1)), color-stop(52%, rgba(119,66,248,1)), color-stop(77%, rgba(93,74,245,1)), color-stop(100%, rgba(70,82,242,1)));
+    background: -webkit-linear-gradient(top, rgba(172,48,255,1) 0%, rgba(119,66,248,1) 52%, rgba(93,74,245,1) 77%, rgba(70,82,242,1) 100%);
+    background: -o-linear-gradient(top, rgba(172,48,255,1) 0%, rgba(119,66,248,1) 52%, rgba(93,74,245,1) 77%, rgba(70,82,242,1) 100%);
+    background: -ms-linear-gradient(top, rgba(172,48,255,1) 0%, rgba(119,66,248,1) 52%, rgba(93,74,245,1) 77%, rgba(70,82,242,1) 100%);
+    background: linear-gradient(to bottom, rgba(172,48,255,1) 0%, rgba(119,66,248,1) 52%, rgba(93,74,245,1) 77%, rgba(70,82,242,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ac30ff', endColorstr='#4652f2', GradientType=0 );
 }
 
 nav {
@@ -17,9 +25,9 @@ nav {
     align-items: center;
     justify-content: space-between;
 
-    -webkit-box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 
     position:relative;
     z-index:999;
@@ -39,26 +47,25 @@ nav {
 
 
 .navbar-end button {
-    background-color: #e6e6e6;
+    background-color: #4652f2;
+    color: whitesmoke;
     height: 50px;
-    width: auto;
+    width: 120px;
     padding-left: 20px;
     padding-right: 20px;
     border: 0px;
     float: right;
     font-size: 1.5em;
+    font-weight: bold;
 
-    -webkit-box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
 }
 
 .navbar-end button:hover {
-    background-color: #f0f0f0;
+    background-color: #feb982;
 }
 
 .navbar-end button:focus {
-    background-color: #cecece;
+    background-color: #f7862b;
 }
 
 .navbar-center button {
@@ -80,8 +87,9 @@ nav {
 
 .content {
     width: 100vw;
-    min-height: 80vh;
-    background-color: whitesmoke;
+    min-height: calc(100vh - 100px);
+    background-color: transparent;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,23 +97,26 @@ nav {
 
 .login-container {
     background-color: white;
-    -webkit-box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 
-    padding: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     width: 600px;
     height: 700px;
-
-
     margin-top: 100px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 .login-container h2 {
     align-self: center;
+    font-size: 2rem;
 }
 
 .login-container input {
@@ -125,7 +136,9 @@ nav {
 }
 
 .login-container button {
-    background-color: #e6e6e6;
+    background-color: #4652f2;
+    color: whitesmoke;
+    font-weight: bold;
     height: 50px;
     border: 0;
     width: 200px;
@@ -133,7 +146,6 @@ nav {
     padding-right: 20px;
     float: right;
     font-size: 1.5em;
-    color: black;
     align-self: center;
 
     -webkit-box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
@@ -151,11 +163,12 @@ nav {
 
 .login-container label {
     color: dimgray;
+    font-weight: 500;
 }
 
 .login-container .password-strength {
     width: 300px;
-    height: 25px;
+    height: 15px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
@@ -163,20 +176,43 @@ nav {
     align-items: center;
     align-self: center;
 
-    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 0px 7px -2px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 7px -2px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 7px -2px rgba(0,0,0,0.3);
+
+}
+
+.very-weak, .weak, .ok, .strong{
+    background-color: #e95656;
+    width: 50px;
+    height: 5px;
+    display: inline;
 
     -webkit-box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
 }
 
-.very-weak, .weak, .ok, .strong{
-    background-color: #7ee77e;
-    width: 50px;
-    height: 10px;
-    display: inline;
+.hidden {
+    display: none;
+}
 
-    -webkit-box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+@media only screen and (max-width: 700px) {
+    .content, body {
+        background-color: white;
+    }
+    .login-container {
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        width: 100%;
+        height: 700px;
+    }
+
+    .login-container input {
+        height: 50px;
+    }
+
 }
