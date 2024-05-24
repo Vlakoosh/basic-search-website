@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-start">
+        <p></p>
+    </div>
+    <div class="navbar-center">
+        <button id="homeButton">Home</button>
+    </div>
+    <div class="navbar-end">
+        <button id="accountButton" class="offline">Sign In</button>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="login-container">
+
+        <h2>Sign in</h2>
+        <div>
+            <label for="username">Username</label>
+            <input type="text" minlength="4" name="username" id="username">
+        </div>
+        <div>
+            <label for="birthDate">Date of Birth</label>
+            <input type="text" name="birthDate" id="birthDate">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+        </div>
+        <div class="password-strength">
+            <div class="very-weak"></div>
+            <div class="weak"></div>
+            <div class="ok"></div>
+            <div class="strong"></div>
+        </div>
+        <button type="submit">Sign in</button>
+    </div>
+</div>
+
+<script src="sign-up.js"></script>
+
+</body>
+</html>
