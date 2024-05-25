@@ -8,11 +8,9 @@
 </head>
 <body>
 <nav class="navbar">
-    <div class="navbar-start">
-        <p></p>
-    </div>
     <div class="navbar-center">
         <button id="homeButton">Home</button>
+        <button id="searchButton">Search</button>
     </div>
     <div class="navbar-end">
         <button id="accountButton" class="offline">Sign In</button>
@@ -20,7 +18,7 @@
 </nav>
 
 <div class="content">
-    <form class="login-container">
+    <form id="signInForm" class="login-container" action="index.html">
 
         <h2>Welcome !</h2>
         <div>
@@ -46,16 +44,17 @@
             <span id="spanConfirmPassword" class="hidden" style="color: indianred">bababooey</span>
         </div>
         <div class="password-strength">
-            <div class="very-weak"></div>
-            <div class="weak"></div>
-            <div class="ok"></div>
-            <div class="strong"></div>
+            <div id="very-weak"></div>
+            <div id="weak"></div>
+            <div id="ok"></div>
+            <div id="strong"></div>
         </div>
-        <button type="submit">Sign in</button>
+        <button id="signIn" type="submit">Sign in</button>
     </form>
 </div>
 
-<script src="sign-up.js"></script>
-<script src="sign-out.js"></script>
+<script src="sign-up.js" type="module"></script>
+<script src="sign-out.js" type="module"></script>
+<script src="navButtonEvents.js" type="module"></script>
 </body>
 </html>

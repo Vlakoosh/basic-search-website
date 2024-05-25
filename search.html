@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search Result</title>
+    <title>Home Page</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,16 +18,12 @@
 </nav>
 
 <div class="content">
-    <div id="tableContainer">
-        <table id="table">
-            <tr>
-                <th>Laureate</th>
-                <th>Country Born</th>
-                <th>Prize</th>
-            </tr>
-        </table>
-        <span class="hidden" id="spanTable">bababooey</span>
-
+    <div id="searchContainer">
+        <form action="search-result.html">
+            <h1>Look Up Laureates</h1>
+            <input type="text" name="query" id="query">
+            <button type="submit">Search</button>
+        </form>
     </div>
 </div>
 
@@ -35,7 +31,5 @@
 <script src="index.js" type="module"></script>
 <script src="sign-out.js" type="module"></script>
 <script src="navButtonEvents.js" type="module"></script>
-<script src="nobelprize_laureates.js" type="module"></script>
-<script src="search-result.js" type="module"></script>
 </body>
 </html>

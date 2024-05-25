@@ -8,11 +8,9 @@
 </head>
 <body>
 <nav class="navbar">
-    <div class="navbar-start">
-        <p></p>
-    </div>
     <div class="navbar-center">
         <button id="homeButton">Home</button>
+        <button id="searchButton">Search</button>
     </div>
     <div class="navbar-end">
         <button id="accountButton" class="offline">Sign In</button>
@@ -20,17 +18,11 @@
 </nav>
 
 <div class="content">
-    <div id="searchContainer">
-        <form action="">
-            <h1>Look Up Laureates</h1>
-            <input type="text" name="query" id="query">
-            <button type="submit">Search</button>
-        </form>
-    </div>
 </div>
 
 
 <script src="index.js" type="module"></script>
-<script src="sign-out.js"></script>
+<script src="sign-out.js" type="module"></script>
+<script src="navButtonEvents.js" type="module"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@ function setOnline() {
 
     let p = document.createElement("p");
     p.style.fontWeight = "600";
-    p.textContent = "Welcome, " + user.username;
+    p.textContent = "Welcome, " + user.username.toUpperCase().slice(0,1) + user.username.toLowerCase().slice(1);
     p.style.marginRight = "30px";
 
     navbarEnd.innerHTML = "";
@@ -48,3 +48,4 @@ function setOffline() {
 function isOnline() {
     return localStorage.getItem("currentUser");
 }
+
