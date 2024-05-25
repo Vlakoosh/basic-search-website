@@ -36,7 +36,11 @@ function displayLaureates(people) {
 
         columnName.textContent = person.firstname + " " + person.surname;
         columnCountry.textContent = person.bornCountry;
-        columnPrize.textContent = "prize";
+        for (let prize of person.prizes){
+            if (columnPrize.textContent !== "") columnPrize.textContent += ", "
+            columnPrize.textContent += prize.category + " " + "(" + prize.year + ")";
+        }
+
 
         row.append(columnName, columnCountry, columnPrize);
         table.appendChild(row);
