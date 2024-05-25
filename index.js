@@ -3,7 +3,7 @@ const signInNavButton = document.getElementById("accountButton");
 
 function setSignInButtonEvents() {
     signInNavButton.addEventListener('click', () => {
-        window.location.href = "sign-up.html";
+        if (!localStorage.getItem("currentUser")) window.location.href = "sign-up.html";
     });
 }
 

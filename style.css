@@ -39,6 +39,11 @@ nav {
     align-items: center;
     justify-content: center;
 }
+.navbar-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .navbar-end button {
@@ -52,15 +57,18 @@ nav {
     float: right;
     font-size: 1.5em;
     font-weight: bold;
+}
 
+.online {
+    width: 160px !important;
 }
 
 .navbar-end button:hover {
-    background-color: #feb982;
+    background-color: #6670f5;
 }
 
 .navbar-end button:focus {
-    background-color: #f7862b;
+    background-color: #21278a;
 }
 
 .navbar-center button {
@@ -145,11 +153,11 @@ nav {
 }
 
 .login-container button:hover {
-    background-color: #f0f0f0;
+    background-color: #6670f5;
 }
 
 .login-container button:focus {
-    background-color: #cecece;
+    background-color: #21278a;
 }
 
 .login-container label {
